@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de noticia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>JorgiouS.virt</h1>
+            <form>
+                <input type="search" placeholder="Pesquise o seu produto ">
+                <button type="submit">pesquisar</button>
+            </form>
+            <div class="botao-menu">
+                <button type="button">abrir menu</button>
+            </div>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    <a href="#">Sobre a Loja </a>
+                </li>
+                <li>
+                    <a href="#">Mais vendidos </a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Sobre a loja </h2>
+                <article class="produto">
+                        <img src="img/Sobre.jpg">
+                        <p>
+                            Bem-vindo à nossa loja de PC Gamer, o destino definitivo para jogadores exigentes! Nós oferecemos PCs gamers montados e uma ampla gama de peças de hardware individuais, cuidadosamente selecionadas para garantir desempenho e qualidade excepcionais. 
+                        </p>
+                </article>
+            </section>
+            <section >
+                <h2>Mais vendidos</h2>
+                <div class="produtos">
+                    <article class="produto">
+                            <img src="img/prod1.jpg">
+                            <h3>ADM WHITE</h3>
+                            <p>COMPUTADOR GAMER, AMD RYZEN 9 5900X, GEFORCE RTX 3060 12GB, 16GB DDR4, SSD M.2 480GB</p>
+                            <strong>R$ 7.999,90</strong>
+                            <button type="button">Adicionar ao carrinho +</button>
+                    </article>
+                    <article class="produto">
+                            <img src="img/prod2.jpg">
+                            <h3>ADM BLACK</h3>
+                            <p>COMPUTADOR GAMER, AMD RYZEN 9 5900X, GEFORCE RTX 3060 12GB, 16GB DDR4, SSD M.2 480GB</p>
+                            <strong>R$ 6.499,90</strong>
+                            <button type="button">Adicionar ao carrinho +</button>
+                    </article>
+                    <article class="produto">
+                            <img src="img/prod3.jpg">
+                            <h3>ADM FURIOUS</h3>
+                            <p>COMPUTADOR GAMER, AMD RYZEN 9 5900X, GEFORCE RTX 3060 12GB, 16GB DDR4, SSD M.2 480GB</p>
+                            <strong>R$ 12.100,00</strong>
+                            <button type="button">Adicionar ao carrinho +</button>
+                    </article>
+                    <article class="produto">
+                            <img src="img/prod4.jpg">
+                            <h3>ADM SIMPLE</h3>
+                            <p>COMPUTADOR GAMER, AMD RYZEN 9 5900X, GEFORCE RTX 3060 12GB, 16GB DDR4, SSD M.2 480GB</p>
+                            <strong>R$ 3.999,90</strong>
+                            <button type="button">Adicionar ao carrinho +</button>
+                    </article>
+                    
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.botao-menu button').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>

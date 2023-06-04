@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica', sans-serif;;
+}
+
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto ;
+}
+
+
+input{
+    padding: 6px;
+    border-radius: 6px;
+    border: 2px solid rgb(75, 19, 179) ;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-bottom: 56px;
+}
+
+nav.container{
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.menu li a{
+    color: #333;
+    text-decoration: none;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-bottom: 4px solid transparent;
+}
+
+.menu li:hover {
+    border-color: rgb(75, 19, 179);
+}
+
+.produto h3,
+.produto p,
+.produto strong{
+    padding: 8px;
+}
+
+.botao-menu{
+    display: flex;
+    margin-top: 16px;
+    padding-bottom: 16px;
+}
+
+button{ 
+    background-color: rgba(75, 19, 179);
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.destaque .produto a {
+    display: flex;
+    font-size: 26px;
+}
+
+.destaque .produto img{
+    margin-right: 8px;
+}
+
+section h2{
+    margin-bottom: 32px;
+    margin-top: 38px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo{
+        display: block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .destaque .produto a {
+        display: block;
+        font-size: 16px;
+    }
+    
+    nav{
+        display: inline;
+        justify-content: center;
+    }
+    
+
+    .destaque .produto img{
+        margin-right: 0;
+    }
+
+    .produtos{
+        display: block;
+    }
+
+    .produtos .produto{
+        margin-bottom: 32px ;
+    }
+
+    aside{
+        padding-left: 0;
+    }
+
+    header div.container{
+    flex-direction: column;
+    }
+
+.container .botao-menu{
+    padding: 8px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        max-width: 90%;
+    }
+
+    .produtos{
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (min-width: 1024px ) {
+}
+
