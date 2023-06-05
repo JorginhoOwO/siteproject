@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.themecss"/>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slickTheme.css"/>
 </head>
 <body>
     <header>
@@ -34,16 +36,25 @@
             <div class="clear"></div>
         </nav>
     </header>
+    <div id="carrosel">
+        <img src="img/slide1.jpg" alt="">
+        <img src="img/slide2.jpg" alt="">
+    </div>
     <div class="container conteudo">
         <main>
-            <section class="destaque">
-                <h2>Sobre a loja </h2>
-                <article class="produto">
-                        <img src="img/Sobre.jpg">
-                        <p>
-                            Bem-vindo à nossa loja de PC Gamer, o destino definitivo para jogadores exigentes! Nós oferecemos PCs gamers montados e uma ampla gama de peças de hardware individuais, cuidadosamente selecionadas para garantir desempenho e qualidade excepcionais. 
-                        </p>
-                </article>
+            <section class="sobre">
+                        <div id="imagem">
+                            <img src="img/Sobre.jpg">
+                        </div>
+                        <div id="texto">
+                            <h2>Sobre a loja </h2>
+                            <p>
+                                Bem-vindo à nossa loja de PC Gamer, o destino definitivo para jogadores exigentes! Nós oferecemos PCs gamers montados e uma ampla gama de peças de hardware individuais, cuidadosamente selecionadas para garantir desempenho e qualidade excepcionais. 
+                            </p>
+                            <p>
+                                Os melhores produtos com os melhores Preços
+                            </p>
+                        </div>
             </section>
             <section >
                 <h2>Mais vendidos</h2>
@@ -63,14 +74,14 @@
                             <button type="button">Adicionar ao carrinho +</button>
                     </article>
                     <article class="produto">
-                            <img src="img/prod3.jpg">
+                            <img src="img/prod1.jpg">
                             <h3>ADM FURIOUS</h3>
                             <p>COMPUTADOR GAMER, AMD RYZEN 9 5900X, GEFORCE RTX 3060 12GB, 16GB DDR4, SSD M.2 480GB</p>
                             <strong>R$ 12.100,00</strong>
                             <button type="button">Adicionar ao carrinho +</button>
                     </article>
                     <article class="produto">
-                            <img src="img/prod4.jpg">
+                            <img src="img/prod2.jpg">
                             <h3>ADM SIMPLE</h3>
                             <p>COMPUTADOR GAMER, AMD RYZEN 9 5900X, GEFORCE RTX 3060 12GB, 16GB DDR4, SSD M.2 480GB</p>
                             <strong>R$ 3.999,90</strong>
@@ -81,13 +92,19 @@
             </section>
         </main>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function(){
+            $('#carrosel').slick({
+                autoplay: true,
+            });
+
             $('.botao-menu button').click(function(){
-                $('.menu').slideToggle();
-            })
-        })
+                $('.menu').slideToggle(); 
+            });
+        });
     </script>
 </body>
 </html>
